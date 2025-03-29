@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import DocumentViewer, { Annotation } from "@/components/DocumentViewer";
+import DocumentViewer from "@/components/DocumentViewer";
 import { exportAnnotatedPDF } from "@/utils/pdfExport";
+import { Annotation } from "@/components/types";
 
 export default function PDFAnnotatorPage() {
   const [pdfFile, setPdfFile] = useState<File | null>(null);
